@@ -12,10 +12,11 @@ Here is a sample of how to initialize the dataconnector (note the two configurat
 
 Be aware that you must add this classpath snippet to the schema location of your Shibboleth Attribute Resolver:
  
-   <resolver:AttributeResolver
-        ...[snipped]...
-        xmlns:gfipm="urn:global:gfipm:1.2:resolver"
-        xsi:schemaLocation=" ... snipped ...
-                            urn:global:gfipm:1.2:resolver classpath:/schema/gfipm-1.2-resolver.xsd">
+    <resolver:AttributeResolver
+         ...[snipped]...
+         xmlns:gfipm="urn:global:gfipm:1.2:resolver"
+         xsi:schemaLocation=" ... snipped ...
+                             urn:global:gfipm:1.2:resolver classpath:/schema/gfipm-1.2-resolver.xsd">
  
+If you have any questions feel free to contact help@gfipm.net.
 
