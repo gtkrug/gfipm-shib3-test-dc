@@ -153,8 +153,7 @@ public class GfipmTestDataConnector extends AbstractDataConnector {
         {
            log.error ("Failed to identify the principal");
            throw new ResolutionException("Unique principal not identified.");
-        } else if ( strPrincipal.startsWith ("/") )
-        {
+        } else if ( strPrincipal.startsWith ("/") ) {
            int start = strPrincipal.indexOf ('=');
            int end   = strPrincipal.indexOf ('/', start);
            strPrincipal = strPrincipal.substring (start + 1, end); // ;/CN=LinuxrefUser1/ST=GA/C=US/O=Georgia Tech.xml
